@@ -4,7 +4,7 @@
   "description": "a real estate project.",
   "main": "index.js",
   "scripts": {
-    "compile_sass": "node-sass ./sass/main.scss ../css/style.css -w",
+    "compile_sass": "node-sass ./sass/main.scss ./css/style.css -w",
     "devserver" : "live-server",
     "start" : "npm-run-all --parallel devserver compile_sass"
   },

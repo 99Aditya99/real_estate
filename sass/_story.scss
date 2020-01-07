@@ -1,0 +1,13 @@
+.story{
+    background-color: lightblue;
+    
+     &_gallery{
+        grid-row:3;
+        grid-column:freeArea_starts/ col_ends 5 ;
+     }
+     &_content{
+        grid-row:3;
+        grid-column:col_starts 5/ freeArea_ends ;
+
+     }
+}
