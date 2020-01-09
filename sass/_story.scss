@@ -1,13 +1,67 @@
 .story{
     background-color: lightblue;
+    position: relative;
     
      &_gallery{
         grid-row:3;
         grid-column:freeArea_starts/ col_ends 5 ;
+        background-image: url(../img/story_1.jpg);
+        background-repeat: none;
+        background-position:center ;
+        background-size: cover;
+        
+        &_2ndimage{
+         position: absolute;
+         // border: 3px solod black;
+         // background-image: url(../img/story_2.jpg);
+         width: 45%;
+         height:30%;
+         top: 35rem;
+         left: 30rem;
+         z-index: 1;
+        }
      }
      &_content{
+        background-color:whitesmoke;
         grid-row:3;
         grid-column:col_starts 5/ freeArea_ends ;
-
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 9rem 9vw ;
+      //   margin: 3rem;
+         &--text{
+            line-height: 5rem;
+            margin-bottom: 5rem;
+            
+            & > h4{
+               color: rgb(218, 90, 90);
+               text-transform: uppercase;
+            }
+            & > h2{
+               color:rgb(70, 65, 65);
+            }
+            & > p{
+               font-size: 2rem;
+               color:rgb(70, 65, 65);
+            }
+         }
+         &--btn{
+            display: flex;
+            // background-color:gray;
+            
+            
+         
+            & > a{
+               font-size: 1.5rem;
+               background-color:gray;
+               align-items: center;
+               padding: 2rem;
+               text-decoration: none;
+               color: whitesmoke;
+               text-transform: uppercase;
+               justify-items:start ;
+            }
+         }
      }
 }

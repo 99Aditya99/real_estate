@@ -33,7 +33,7 @@ body{
     display:grid;
     grid-template-rows: 80vh min-content 40vw repeat(3,min-content);
     grid-template-columns:[sidebar_starts] 8rem [sidebar_ends freeArea_starts] minmax(6rem,1fr)
-    [center_starts] repeat(8,[col_starts] minmax(min-content,14rem) [col_ends] )[center_ends] minmax(6rem,1fr)[freeArea_ends];
+    [center_starts] repeat(8,[col_starts] minmax(min-content,auto) [col_ends] )[center_ends] minmax(6rem,1fr)[freeArea_ends];
 
     & > *{
         padding: 2rem;
